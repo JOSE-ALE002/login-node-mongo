@@ -1,0 +1,25 @@
+<%- include("./templates/header.ejs") %>
+
+    <main class="container w-25 mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="text-center">Signup</h1>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Correo electronico</label>
+                        <input type="email" name="email" placeholder="email" class="form-control">
+                    </div>                
+                    <div class="mb-3">
+                        <label for="" class="form-label">Password</label>
+                        <input type="password" name="password" placeholder="Password" class="form-control">
+                    </div>                
+                    <div class="mb-3">
+                        <input type="submit" value="Signup" class="btn btn-dark form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+<%- include("./templates/footer.ejs", {}) %>
